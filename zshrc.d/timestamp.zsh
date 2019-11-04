@@ -1,8 +1,4 @@
-#
 # timestamp.zsh
-# Author: Uditha Atukorala
-# Version: 2019-11-03
-#
 
 ua_strlen () {
 	FOO=$1
