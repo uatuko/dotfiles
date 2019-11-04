@@ -8,16 +8,16 @@ ua_strlen () {
 }
 
 ua_timestamp () {
-	DATE=$( date +"[%H:%M:%S]" )
+	DATE=$( date +"%H:%M:%S " )
 	local len_right=$( ua_strlen "$DATE" )
 	len_right=$(( $len_right+1 ))
 	local right_start=$(($COLUMNS - $len_right))
 
 	local len_cmd=$( ua_strlen "$@" )
-	local len_prompt=$(ua_strlen "$PROMPT" )
+	local len_prompt=$( ua_strlen "$PROMPT" )
 	local len_left=$(($len_cmd+$len_prompt))
 
-	RDATE="\033[${right_start}C ${DATE}"
+	RDATE="\033[${right_start}C \e[2;30m${DATE}\e[0m"
 
 	if [ $len_left -lt $right_start ]; then
 		# command does not overwrite right prompt
