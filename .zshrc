@@ -1,5 +1,9 @@
 # .zshrc
 
+setopt histreduceblanks
+setopt histignorespace
+setopt histignorealldups
+
 # macports
 if [ -d /opt/local/bin ] ; then
 	PATH="/opt/local/bin:/opt/local/sbin:/opt/local/libexec/gnubin${PATH:+:${PATH}}"
@@ -18,6 +22,7 @@ zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 
 # [zplug] load plugins
 zplug load
+
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
