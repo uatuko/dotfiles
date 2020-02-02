@@ -14,7 +14,7 @@ fi
 source ~/.zplug/init.zsh
 
 # ua
-zplug uditha-atukorala/dotfiles, use:"zshrc.d/*"
+zplug uditha-atukorala/dotfiles, use:"zshrc.d/*", defer:2
 
 # pure
 zplug mafredri/zsh-async, from:github
