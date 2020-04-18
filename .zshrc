@@ -1,5 +1,7 @@
 # .zshrc
 
+HISTSIZE=50000
+
 setopt histreduceblanks
 setopt histignorespace
 setopt histignorealldups
