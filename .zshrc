@@ -1,10 +1,13 @@
 # .zshrc
 
-HISTSIZE=50000
+HISTSIZE=1000000
+SAVEHIST=$HISTSIZE
 
-setopt histreduceblanks
-setopt histignorespace
-setopt histignorealldups
+setopt hist_reduce_blanks
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt inc_append_history
+setopt share_history
 
 # macports
 if [ -d /opt/local/bin ] ; then
