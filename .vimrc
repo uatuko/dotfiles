@@ -21,6 +21,7 @@ set ruler
 set smarttab
 set nowrap
 
+set backspace=indent,eol,start
 set ts=4 sw=4
 set listchars=tab:.\ ,eol:!
 
