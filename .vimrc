@@ -41,15 +41,15 @@ highlight Search ctermfg=0 ctermbg=220
 set hlsearch
 
 " tagbar
-nmap <F6> :TagbarToggle <CR>
+nmap <F5> :TagbarToggle <CR>
 let g:tagbar_width     = 60
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 let g:tagbar_compact   = 1
 
 " nerdtree
+nmap <F6> :NERDTreeFind <CR>
 nmap <F7> :NERDTreeToggle <CR>
-nmap <F8> :NERDTreeFind <CR>
 
 " typescript
 autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
