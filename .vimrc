@@ -7,7 +7,6 @@ execute pathogen#infect()
 set t_Co=256
 colorscheme zenburn
 
-filetype on
 filetype indent plugin on
 syntax on
 
