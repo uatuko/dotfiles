@@ -5,9 +5,6 @@ return require('packer').startup(function(use)
 		'phha/zenburn.nvim',
 		config = function()
 			require('zenburn').setup()
-
-			-- Overrides
-			vim.highlight.create('Search', {ctermfg=0, ctermbg=220})
 		end
 	}
 
