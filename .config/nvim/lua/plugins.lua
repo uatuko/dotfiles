@@ -45,8 +45,8 @@ return require('packer').startup(function(use)
 			vim.opt.termguicolors = true
 			require('bufferline').setup()
 		end,
-		requires = 'kyazdani42/nvim-web-devicons',
-		tag = "v3.*"
+		requires = 'nvim-tree/nvim-web-devicons',
+		tag = "*"
 	}
 
 	use {
